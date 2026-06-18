@@ -1676,7 +1676,7 @@ window.prepareRegister = () => {
 };
     
     
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzNuJCiRr6fpZupYGfvAIwxeTExfUgxWkGcnjqhJrRvDaV8GJdKcZ0pcH3mOZZ8mY7KjA/exec"; // GANTI DENGAN URL WEB APP LO
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxI8LiKkFSpkPM94UKu5QhczoAWxnqjU0rictzBLAJzEy_-QzcTzEh5nVV0bze_jsqhHA/exec"; // GANTI DENGAN URL WEB APP LO
 
 window.showToast = (m, t = 'success') => {
     const el = document.getElementById('toast');
