@@ -676,6 +676,7 @@
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Password Saat Ini</label>
                                 <input type="password" id="cpOldPass" class="w-full px-4 py-3 bg-white/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-brand outline-none transition-all dark:text-white font-medium" required>
+                                <p class="text-[10px] text-slate-500 mt-1 italic">*Jika baru mereset akun, masukkan kode OTP dari WA/Email di sini.</p>
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Password Baru</label>
