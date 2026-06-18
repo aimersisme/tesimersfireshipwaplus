@@ -1071,6 +1071,7 @@
                                             <option value="fonnte">Fonnte</option>
                                             <option value="starsender">StarSender</option>
                                             <option value="xsender">Xsender</option>
+                                            <option value="waplus">WaPlus API</option>
                                             <option value="custom">Custom API</option>
                                         </select>
                                     </div>
@@ -3071,7 +3072,9 @@ window.saveUser = async () => {
             });
             const licenseData = selectedProducts.join(', ');
             
-            let payload = { id, name, email, wa, role, license: licenseData };
+            // --- SUNTIKAN ANTI-HACK (Ngelaporin Eksekutor ke Backend) ---
+            const executorEmail = window.appState.user ? window.appState.user.email : '';
+            let payload = { id, name, email, wa, role, license: licenseData, executorEmail: executorEmail };
             // ---------------------------------------------------
            
             if (id) { 
@@ -3094,7 +3097,6 @@ window.saveUser = async () => {
             window.showToast(e.message, "error");
         }
     };
-
     window.editUser = (id) => {
     try {
         const u = window.appState.usersData.find(x => String(x.id) === String(id));
